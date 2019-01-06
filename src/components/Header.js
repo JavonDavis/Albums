@@ -1,5 +1,6 @@
 // Import libraries for making a Component
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Text, View } from 'react-native';
 
 // Make a Component
@@ -30,6 +31,10 @@ const styles = {
   textStyle: {
     fontSize: 20
   }
-}
+};
+
+Header.propTypes = {
+  headerText: PropTypes.string
+};
 // Make the component available to other parts of the app
 export default Header;
